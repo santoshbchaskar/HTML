@@ -1,0 +1,90 @@
+html{
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+  }
+
+article{
+border:3px solid green ;
+width: 500px;
+margin-left:auto;
+margin-right:auto;border-radius:10px;
+position:relative ;
+margin-top: 60px;
+}
+
+article::before{
+  Content:"OFFER";
+  background-color:green;
+  font-size:25px;
+  font-weight:bold;
+  padding:7px 25px;
+  color:white;
+  position:absolute ;
+  transform:rotate(-45deg);
+  top:-10px;
+  left:-50px;;
+}
+
+article::after{
+  Content:"Like";
+  font-size:25px;
+  padding:7px 25px;
+  background-color:#f7f7f7;
+  color:black;
+  position:absolute ;
+  bottom:16px;
+  right:20px;
+  
+  
+}
+
+h2{
+  font-size:26px;
+  color:green;
+  padding:20px;
+  text-align:center;
+  text-transform:uppercase ;;
+  background-color:#f7f7f7;
+  margin: 0;
+  
+}
+
+ul{
+font-size:22px;
+list-style:square;
+line-height:1.5;
+margin-bottom:15px;
+
+}
+/* ul li::before {
+  content:" √ ";
+  color:green;
+  display:inline-block ;
+  font-weight:bold;
+  width:1em;
+margin-left:-1em;
+} */
+
+
+li{
+  padding:5px;
+  border-bottom:1px dotted black;
+  margin-right:20px;
+  
+}
+img{
+  width:500px;
+  height:auto;
+  
+  
+}
+
+button{
+  background-color:green;
+  color:white;
+  font-size:30px;
+  margin-top:25px;
+  padding:5px 20px;
+  border-radius:10px;
+}
