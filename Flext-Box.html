@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+p{
+  text-align:justify;
+}
+.header {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 10px;
+}
+
+.product-container::before{
+  content: "SALE";
+  background-color: red;
+  color: white;
+  padding: 5px 20px;
+  position: absolute;
+  margin-left: -45px;
+  margin-top: -15px;
+/*   transform: rotate(-45deg); */
+  letter-spacing: 7px;
+  
+}
+
+.product-container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+  margin-top: 30px;
+}
+
+.product-info-container {
+  display: flex;
+  gap: 20px;
+}
+
+.item {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.middle {
+  margin-top: 20px;
+}
+
+.right {
+  margin-top: 20px;
+}
+.moreinfo {
+  text-decoration: none;
+  color: darkblue;
+}
+.moreinfo:hover {
+  color: black;
+  font-weight: bold;
+}
+
+ul {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+li {
+  margin-bottom: 15px;
+}
+.color {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.color-box {
+  width: 25px;
+  height: 25px;
+  border: 1px solid lightgrey;
+}
+.blue {
+  background-color: #054972;
+}
+.blue1 {
+  background-color: #0a7c99;
+}
+.blue2 {
+  background-color: #39b4b1;
+}
+.blue3 {
+  background-color: #f6f6d2;
+}
+.blue4 {
+  background-color: #fcdea7;
+}
+.blue5 {
+  background-color: #de5e45;
+}
+.price-shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+h4 {
+  font-size: 12px;
+  font-style: italic;
+  colo: grey;
+}
+
+.cart-btn{
+  width:100%;
+  padding:8px;
+  cursor:pointer;
+  border:none;
+  background-color:black;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  border-top:3px solid black;
+    
+}
+
+.cart-btn:hover{
+  background-color:white;
+  color:black;
+}
+
+
+
+
+
+
+</style>
+<title>Flext-Box.html</title>
+</head>
+
+<body>
+<div class="product-container">
+  <h2 class="header">CONVERSE CHUCK TAYLOR ALL STAR LOW TOP</h2>
+
+  <!--  Product information 3 column container goes here  -->
+
+  <div class="product-info-container">
+    <div class="item prod-image"><img src="https://i.imgur.com/ZrTU3VK.jpeg" alt="Prodct image" width="100%" height="100%"></div>
+
+    <!--Middle Container - Price - shipping - more info - color boxes -->
+    <div class="item middle">
+
+      <div class="price-shipping">
+        <h3>$65.00</h3>
+        <h4>FREE SHIPPING</h4>
+
+      </div>
+
+      <p>Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe staple.</p> <br>
+
+      <a class="moreinfo" href="#">More Information ▶▶</a>
+      <div class="color">
+        <div class="color-box blue"></div>
+        <div class="color-box blue1"></div>
+        <div class="color-box blue2"></div>
+        <div class="color-box blue3"></div>
+        <div class="color-box blue4"></div>
+        <div class="color-box blue5"></div>
+
+      </div>
+
+    </div>
+
+    <!-- Right side column / container goes here     -->
+    <div class="item right">
+      <h3>PRODUCT DETAILS</h3>
+      <ul>
+        <li>Lightweight, durable canvas sneake</li>
+        <li>Lightly padded footbed for added comfort</li>
+        <li>Iconic Chuck Taylor ankle patch.</li>
+      </ul>
+
+    </div>
+
+  </div>
+  <!--Footer - add to cart button goes here -->
+  <a href="https://www.google.com/" target="_blank"><button class="cart-btn">ADD TO CART</button></a>
+</div>
+
+<!-- successfully end -->
+</body>
+</html>
